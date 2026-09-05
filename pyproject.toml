@@ -22,7 +22,7 @@ classifiers = [
     "Topic :: System :: Systems Administration",
 ]
 dependencies = [
-    "mcp>=1.2.0",
+    "mcp>=1.2.0,<2",  # 2.x renomeou FastMCP -> MCPServer; o servidor usa a API 1.x
     "pydantic>=2.6",
 ]
 
