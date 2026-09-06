@@ -1,0 +1,25 @@
+# Gerado por fernando-moretes/platform. Não edite aqui: mude no orquestrador e
+# rode `make rollout`. É o que o Backstage (backstage.home.lab) lê deste repo.
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: app-mcp-aws-solution-architect
+  description: Bilingual MCP server and AWS solution architecture assistant for service discovery, Well-Architected guidance and AI tooling.
+  annotations:
+    github.com/project-slug: fernando-moretes/app-mcp-aws-solution-architect
+    backstage.io/source-location: url:https://github.com/fernando-moretes/app-mcp-aws-solution-architect
+    sonarqube.org/project-key: app-mcp-aws-solution-architect
+  links:
+    - url: https://github.com/fernando-moretes/app-mcp-aws-solution-architect/actions
+      title: Actions
+      icon: github
+    - url: https://sonarqube.home.lab/dashboard?id=app-mcp-aws-solution-architect
+      title: SonarQube
+    - url: https://defectdojo.home.lab/product?name=app-mcp-aws-solution-architect
+      title: DefectDojo
+  tags: [website, ci-python.yml]
+spec:
+  type: website
+  lifecycle: production
+  owner: group:plataforma
+  system: homelab
