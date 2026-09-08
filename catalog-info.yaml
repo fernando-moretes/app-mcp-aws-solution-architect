@@ -9,6 +9,8 @@ metadata:
     github.com/project-slug: fernando-moretes/app-mcp-aws-solution-architect
     backstage.io/source-location: url:https://github.com/fernando-moretes/app-mcp-aws-solution-architect
     sonarqube.org/project-key: app-mcp-aws-solution-architect
+    # TechDocs: mkdocs.yml + docs/ do proprio repositorio (rolados pelo platform)
+    backstage.io/techdocs-ref: dir:.
   links:
     - url: https://github.com/fernando-moretes/app-mcp-aws-solution-architect/actions
       title: Actions
