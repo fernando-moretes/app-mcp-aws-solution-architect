@@ -7,12 +7,16 @@
  */
 workspace "app-mcp-aws-solution-architect" "Bilingual MCP server and AWS solution architecture assistant for service discovery, Well-Architected guidance and AI tooling." {
 
+    configuration {
+        scope softwaresystem
+    }
+
     model {
         usuario = person "Usuário"
         sistema = softwareSystem "app-mcp-aws-solution-architect" "Bilingual MCP server and AWS solution architecture assistant for service discovery, Well-Architected guidance and AI tooling." {
             app = container "Aplicação" "Descreva o que roda aqui" "ci-python.yml"
         }
-        usuario -> sistema.app "Usa"
+        usuario -> sistema.app "Usa" "HTTPS"
     }
 
     views {
@@ -25,9 +29,19 @@ workspace "app-mcp-aws-solution-architect" "Bilingual MCP server and AWS solutio
             autoLayout lr
         }
         styles {
-            element "Person" { shape person; background #08427b; color #ffffff }
-            element "Software System" { background #1168bd; color #ffffff }
-            element "Container" { background #438dd5; color #ffffff }
+            element "Person" {
+                shape person
+                background #08427b
+                color #ffffff
+            }
+            element "Software System" {
+                background #1168bd
+                color #ffffff
+            }
+            element "Container" {
+                background #438dd5
+                color #ffffff
+            }
         }
     }
 }
